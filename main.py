@@ -16,6 +16,12 @@ def main():
     screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
     clock = pygame.time.Clock()
     dt = 0
+    # Create Groups
+    updatable = pygame.sprite.Group()
+    drawable = pygame.sprite.Group()
+    Player.containers = (updatable, drawable)
+
+    # Create Player instance
     player = Player(SCREEN_WIDTH/2, SCREEN_HEIGHT/2)
 
     # Use an infinite loop for the game loop
@@ -34,8 +40,9 @@ def main():
         screen.fill("black")
 
         # Draw player on screen
-        player.update(dt)
-        player.draw(screen)
+        updatable.update(dt)
+        for player in drawable:
+            player.draw(screen)
 
         # Refersh the screen
         pygame.display.flip()
