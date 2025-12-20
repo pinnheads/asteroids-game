@@ -1,5 +1,6 @@
 import pygame
 from constants import SCREEN_HEIGHT, SCREEN_WIDTH
+from player import Player
 from logger import log_state
 
 
@@ -12,6 +13,9 @@ def main():
     pygame.init()
     # Create screen
     screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
+    clock = pygame.time.Clock()
+    dt = 0
+    player = Player(SCREEN_WIDTH/2, SCREEN_HEIGHT/2)
 
     # Use an infinite loop for the game loop
     # NOTE: Game Loop - https://gameprogrammingpatterns.com/game-loop.html
@@ -21,9 +25,15 @@ def main():
             if event.type == pygame.QUIT:
                 return
         screen.fill("black")
+        # Draw player on screen
+        player.draw(screen)
 
         # Refersh the screen
         pygame.display.flip()
+
+        # calculate delta time
+        time_passed = clock.tick(60)
+        dt = time_passed / 1000
 
 
 if __name__ == "__main__":
