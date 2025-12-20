@@ -8,3 +8,4 @@ LINE_WIDTH = 2
 
 # Player Movement
 PLAYER_TURN_SPEED = 300
+PLAYER_SPEED = 200
