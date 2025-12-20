@@ -14,9 +14,9 @@ class CircleShape(pygame.sprite.Sprite):
         self.radius = radius
 
     def draw(self, screen):
-        # TODO: must override
+        # must override
         pass
 
     def update(self, dt):
-        # TODO: must override
+        # must override
         pass
