@@ -48,12 +48,23 @@ def main():
         screen.fill("black")
 
         updatable.update(dt)
+
+        # check if player collided with an asteroid
         for asteroid in asteroids:
             if player.collides_with(asteroid):
                 log_event("player_hit")
                 print("Game Over!")
                 sys.exit(1)
 
+        # check if asteroid is shot by player
+        for asteroid in asteroids:
+            for shot in shots:
+                if shot.collides_with(asteroid):
+                    log_event("asteroid_shot")
+                    shot.kill()
+                    asteroid.kill()
+
+        # draw all objects in drawable group
         for sprite in drawable:
             sprite.draw(screen)
 
