@@ -1,6 +1,6 @@
 # 🚀 Asteroids Game
 
-A modern, open-source recreation of the classic arcade space shooter, developed by **Pinnheads**. Navigate through treacherous asteroid fields, blast space rocks into dust, and avoid enemy saucers in this retro-inspired challenge.
+A modern, open-source recreation of the classic arcade space shooter. Navigate through treacherous asteroid fields, blast space rocks into dust, and avoid enemy saucers in this retro-inspired challenge.
 
 ## 🎮 About The Project
 
@@ -16,7 +16,7 @@ This project is a clone of the legendary 1979 Atari arcade game **Asteroids**. I
 
 ## 🎬 Gameplay
 
-[▶️ Watch the gameplay video](<Game Play.mp4>)
+https://github.com/user-attachments/assets/5b733122-b10a-4ca0-b1bc-2a38e23eddbf
 
 ## 🛠️ Built With
 
