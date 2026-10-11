@@ -22,3 +22,11 @@ PLAYER_SHOOT_SPEED = 500
 
 # Shot properties
 PLAYER_SHOOT_COOLDOWN_SECONDS = 0.3
+
+# Scoring (points awarded by asteroid radius)
+ASTEROID_SCORES = {
+    ASTEROID_MIN_RADIUS * 3: 20,
+    ASTEROID_MIN_RADIUS * 2: 50,
+    ASTEROID_MIN_RADIUS * 1: 100,
+}
+HIGH_SCORE_FILE = "highscore.txt"

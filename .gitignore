@@ -12,3 +12,6 @@ wheels/
 # Logs
 game_state.jsonl
 game_event.jsonl
+
+highscore.txt
+.DS_Store

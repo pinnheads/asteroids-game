@@ -14,6 +14,10 @@ This project is a clone of the legendary 1979 Atari arcade game **Asteroids**. I
 - **Score Tracking:** High score system to challenge your friends.
 - **Modular Design:** Clean code architecture separating game logic (`asteroidfield`, `player`, `shot`).
 
+## 🎬 Gameplay
+
+[▶️ Watch the gameplay video](<Game Play.mp4>)
+
 ## 🛠️ Built With
 
 - [**Python**](https://www.python.org/) - Core programming language.
@@ -86,6 +90,8 @@ python main.py
 | **A / ⬅️**    | Rotate Left                 |
 | **D / ➡️**    | Rotate Right                |
 | **Spacebar** | Fire Weapon                 |
+| **P / Esc**  | Pause / Resume              |
+| **Enter**    | Start / Play Again          |
 
 ## 🤝 Contributing
 
